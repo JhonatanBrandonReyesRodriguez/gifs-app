@@ -23,9 +23,7 @@ export class SearchBoxComponent {
 
   searchTag() {
     const newTag = this.tagInput.nativeElement.value;
-
     this.giftsService.searchTag(newTag);
-
     this.tagInput.nativeElement.value = '';
   }
 }

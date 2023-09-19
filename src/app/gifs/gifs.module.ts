@@ -4,6 +4,7 @@ import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { CardComponent } from './components/card/card.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { CardComponent } from './components/card/card.component';
     CardListComponent,
     CardComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   exports: [HomePageComponent],
   //exportar si se van a usar en otro sitio
 })
